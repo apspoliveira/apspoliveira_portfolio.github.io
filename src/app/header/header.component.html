@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+    <a mat-button routerLink='/home' routerLinkActive='active'><span class="fa fa-home fa-lg"></span> Home</a>
+    <a mat-button routerLink='/experience' routerLinkActive='active'> Experience</a>
+    <a mat-button routerLink='/education' routerLinkActive='active'> Education</a>
+    <a mat-button routerLink='/expertise' routerLinkActive='active'> Expertise</a>
+    <a mat-button routerLink='/skills' routerLinkActive='active'> Skills</a>
+    <a mat-button routerLink='/motivation' routerLinkActive='active'> Motivation</a>
+    <a mat-button routerLink='/gallery' routerLinkActive='active'> Gallery</a>
+    <a mat-button routerLink='/hobbies' routerLinkActive='active'> Hobbies</a>
+    <a mat-button routerLink='/contact' routerLinkActive='active'> Contact</a>
+    <span class="flex-spacer"></span>
+    <a mat-button (click)="openLoginForm()"><span class="fa fa-sign-in fa-lg"></span> Login</a>
+  </mat-toolbar>
+  
+  <div class="container jumbotron"
+      fxLayout="row"
+      fxLayout.sm="column" 
+      fxLayout.xs="column" 
+      fxLayoutAlign.xs="start center"
+      fxLayoutAlign.sm="start center" 
+      fxLayoutAlign.gt-sm="center center" 
+      fxLayoutGap="10px">
+  
+    <div fxFlex fxFlex.gt-sm="100%">
+      <h1>ANTÓNIO PEDRO'S PORTFOLIO</h1>
+      <p>Computer Engineer</p>
+    </div>
+    <div fxFlex></div>
+  </div>

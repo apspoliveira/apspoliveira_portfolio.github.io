@@ -1,0 +1,266 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'variables';
+@import '../node_modules/font-awesome/css/font-awesome.min.css'; /* scss/font-awesome.scss */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+// some basic resets
+$lt-gray: #ddd;
+$background-dark: #512DA8;
+$background-light: #9575CD;
+$background-pale: #D1C4E9;
+$primary-color-dark:   #512DA8;
+$primary-color:        #673AB7;
+$primary-color-light:  #D1C4E9;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #FFC107;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+}
+
+.background-primary {
+    background-color: $background-dark!important;
+  }
+.background-accent {
+    background-color: $accent-color!important;
+  }
+.text-floral-white {
+    color: floralwhite!important;
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+.highlight {
+  background-color: $background-pale;
+  border: 1px solid $primary-color-dark;
+  z-index: 1;
+  transform: scale(1.01);
+}
+
+/*
+Verticard Template
+https://templatemo.com/tm-533-verticard
+*/
+
+body {
+  /*font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  overflow-x: hidden;*/
+  background-color: #eeeeee;
+  color: #6C6D6E;
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.tm-primary-color {
+  color: #61AEAE;
+}
+
+.tm-page-container {
+  max-width: 600px;
+  width: 100%;  
+}
+
+.tm-section {
+  margin-bottom: 155px;
+  position: relative;
+}
+
+.tm-content-container {      
+  border-radius: 20px;
+  background-color: white;
+}
+
+.tm-nav {
+  position: absolute;
+  right: -45%;
+  top: 45px;
+}
+
+.tm-nav > ul > li {
+  list-style: none;
+}
+
+.tm-nav > ul > li > a {
+  display: block;
+  padding: 12px 15px;
+  color: #999A9B;
+}
+
+.tm-nav > ul > li.active > a,
+.tm-nav > ul > li > a:hover,
+.tm-nav > ul > li > a:focus {
+  color: #0299CC;
+}
+
+.tm-nav-deco {
+  display: inline-block;
+  width: 20px;
+  height: 8px;
+  background-color: #999A9B;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.tm-nav > ul > li.active > a > .tm-nav-deco,
+.tm-nav > ul > li:hover > a > .tm-nav-deco
+ {
+  background-color: #0299CC;
+}
+
+.tm-content {  
+  padding: 55px;
+}
+
+.tm-header {
+  padding: 65px 15px;
+}
+
+.tm-title {
+  font-size: 2rem;
+  color: #626364;
+}
+
+.tm-page-title {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #656667;
+}
+
+.tm-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;  
+}
+
+footer {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  color: #9A9B9C;
+}
+
+.tm-img-overlay-wrap {
+	position: relative;
+	min-height: 160px;
+	max-width: 120px;
+	max-height: 160px;
+	background-image: url(../img/contact_2.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	border-radius: 20px;
+	margin: 0 auto;
+	top: 1em;
+}
+
+.tm-img-overlay {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.tm-img-overlay-text {
+	position: relative;
+	z-index: 1000;
+}
+
+.tm-contact-form {
+	max-width: 380px;
+}
+
+.form-group {
+	margin-bottom: 35px;
+}
+
+.btn {
+	font-size: 1.1rem;
+	padding: 10px 35px;
+	border: none;
+}
+
+.btn-primary {
+	background-color: #9999CC;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background-color: #9a9afc;
+}
+
+.tm-small {
+	font-size: 90%;
+}
+
+@media (max-width: 945px) {
+  .tm-nav {
+    position: static;
+  }
+
+  .tm-page-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    display: block;
+  }
+
+  footer span {
+    display: block;
+    padding: 15px;
+  }
+}
+
+.col-sm {
+	text-align: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	background-color: #000;
+	color: #fff;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.carousel-caption, .carousel-caption > h5 {
+  color: #6c6d6e;
+  font-weight: bold;
+  font-size:large;
+  text-align: center;
+}
